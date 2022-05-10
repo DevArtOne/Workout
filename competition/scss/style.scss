@@ -1,0 +1,163 @@
+@import "nullstyle.scss";
+
+@import "nullstyle.scss";
+body{
+    font-family: 'alumni sans';
+    background-color: #05211f;
+    height: auto;
+
+}
+
+.pull-up {
+    
+
+    &__buttons {
+    }
+
+    &__video {
+    }
+
+    &__title {
+        
+    }
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.buttons {
+margin: 25px 0;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+
+    &__button-second{
+        
+        padding: 10px 15px;
+        text-align: center;
+        line-height: 2.2;
+        color: white;
+        border-radius: 5px;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+        &:first-child{
+            background: rgb(255, 255, 255);
+
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+            font-weight: 700;
+            letter-spacing: 1.3px;
+            box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+            &:active{
+                position: relative;
+                top: 3px;
+                left: 3px;
+                box-shadow: 0 0 0 ;
+            }
+        }
+        
+        &:nth-child(2){
+            background: rgb(49, 49, 49);
+            box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+            &:active{
+                position: relative;
+                top: 3px;
+                left: 3px;
+                box-shadow: 0 0 0 ;
+            }
+        }
+        &:nth-child(3){
+            background: rgb(49, 49, 49);
+            box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+            &:active{
+                position: relative;
+                top: 3px;
+                left: 3px;
+                box-shadow: 0 0 0 ;
+            }
+        }
+        &:nth-child(4){
+            background: rgb(49, 49, 49);
+            box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+            &:active{
+                position: relative;
+                top: 3px;
+                left: 3px;
+                box-shadow: 0 0 0 ;
+            }
+        }
+        &:nth-child(5){
+            background: rgb(49, 49, 49);
+            box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+            &:active{
+                position: relative;
+                top: 3px;
+                left: 3px;
+                box-shadow: 0 0 0 ;
+            }
+        }
+        &:nth-child(6){
+            background: rgb(49, 49, 49);
+            box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+            &:active{
+                position: relative;
+                top: 3px;
+                left: 3px;
+                box-shadow: 0 0 0 ;
+            }
+        }
+        &:nth-child(7){
+            background: rgb(102, 9, 9);
+            box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+            &:active{
+                position: relative;
+                top: 3px;
+                left: 3px;
+                box-shadow: 0 0 0 ;
+            }
+        }
+        &:nth-child(8){
+            background: rgb(49, 49, 49);
+            box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+            &:active{
+                position: relative;
+                top: 3px;
+                left: 3px;
+                box-shadow: 0 0 0 ;
+            }
+        }
+        
+        &:last-child{
+            margin-right: 0;
+            background: rgb(49, 49, 49);
+            box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+            &:active{
+                position: relative;
+                top: 3px;
+                left: 3px;
+                box-shadow: 0 0 0 ;
+            }
+        }
+    }
+}
+.videos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__video {
+        margin-right: 15px;
+    }
+    &__title{
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 15px;
+        letter-spacing: 1.2px;
+    }
+}

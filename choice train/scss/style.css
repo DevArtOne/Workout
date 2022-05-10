@@ -1,0 +1,234 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*за допомогою данної функції ми скидуємо всі кордони які задаються браузером автоматично*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*дане значення зміню підрахунок ширини блоку так щоб нам було зручно знею працювати*/
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*дана функція прибирає лінії обводки в деяких браузерах*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/*Робимо блочними данні теги nav, footer, header, aside*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -mos-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*Дані параметри задають рівні умови для поведінки шрифтів, наприклад самовільне збільшення шрифтів на iphone*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*команда для наслідування сімейства шрифтів*/
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*прибирають деякі особливості в різних браузерах*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* обнулення */
+body {
+  font-family: "alumni sans";
+  background-color: #05211f;
+  height: auto;
+}
+
+.training {
+  background-color: #05211f;
+}
+
+.training__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.training__text {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #eaf3e8;
+  text-shadow: 0px 4px 15px rgba(43, 229, 207, 0.56);
+  margin-top: 100px;
+}
+
+.training__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+  max-width: 1163px;
+  height: auto;
+  margin-top: 40px;
+}
+
+.training__item {
+  margin: 0 30px;
+}
+
+.training__link {
+  text-align: center;
+  color: #eaf3e8;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.83);
+}
+
+.training__link:hover {
+  text-shadow: 0px 15px 5px rgba(43, 229, 207, 0.56);
+}
+
+.training__icon {
+  margin-top: 29px;
+  width: 220px;
+  border-radius: 14px;
+  margin-bottom: 11px;
+  fill: #c6cacc;
+  border: 2px solid #14665d;
+}
+
+.training__icon:hover {
+  border: 2px solid #2be5cf;
+  -webkit-box-shadow: 0 0 15px 5px #2be5cf;
+          box-shadow: 0 0 15px 5px #2be5cf;
+  -webkit-transition: -webkit-box-shadow 0.1s ease 0s;
+  transition: -webkit-box-shadow 0.1s ease 0s;
+  transition: box-shadow 0.1s ease 0s;
+  transition: box-shadow 0.1s ease 0s, -webkit-box-shadow 0.1s ease 0s;
+  fill: #2be5cf;
+}
+
+.training__text-p {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #eaf3e8;
+  margin-bottom: 29px;
+}
+
+@media (max-width: 814.98px) {
+  .training-choice__decor {
+    border: none;
+  }
+}
+
+@media (max-width: 790.98px) {
+  .training__text {
+    font-size: 40px;
+    margin-top: 70px;
+    text-align: center;
+  }
+  .training__block {
+    margin-bottom: 70px;
+  }
+  .training-choice__link {
+    padding-bottom: 50px;
+  }
+  .training-choice .link-img {
+    top: 110px;
+  }
+}
+
+@media (max-width: 540.98px) {
+  .training__block {
+    border: 0;
+  }
+}
+
+@media (max-width: 383.98px) {
+  .training__text {
+    font-size: 25px;
+  }
+  .training__icon {
+    width: 220px;
+  }
+}

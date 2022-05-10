@@ -1,0 +1,120 @@
+@import "nullstyle.scss";
+body {
+    font-family: "alumni sans";
+    background-color: #05211f;
+    height: auto;
+}
+
+.training {
+    background-color: #05211f;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: #eaf3e8;
+        text-shadow: 0px 4px 15px rgba(43, 229, 207, 0.56);
+        margin-top: 100px;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        // border: 4px solid rgba(43, 229, 207, 0.5);
+        margin-bottom: 50px;
+        max-width: 1163px;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    &__item {
+        margin: 0 30px;
+    }
+
+    &__link {
+        text-align: center;
+        color: #eaf3e8;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.83);
+        &:hover {
+            text-shadow: 0px 15px 5px rgba(43, 229, 207, 0.56);
+        }
+    }
+
+    &__icon {
+        margin-top: 29px;
+        width: 220px;
+
+        border-radius: 14px;
+        margin-bottom: 11px;
+        fill: #c6cacc;
+        border: 2px solid #14665d;
+        // box-shadow: 0px 0px 15px 5px rgba(43, 229, 207, 0.56);
+        &:hover {
+            border: 2px solid #2be5cf;
+            box-shadow: 0 0 15px 5px #2be5cf;
+            transition: box-shadow 0.1s ease 0s;
+            fill: #2be5cf;
+        }
+    }
+    &__text-p {
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: #eaf3e8;
+        margin-bottom: 29px;
+    }
+}
+
+@media (max-width: 814.98px) {
+    .training-choice__decor {
+        border: none;
+    }
+}
+
+@media (max-width: 790.98px) {
+    .training__text {
+        font-size: 40px;
+        margin-top: 70px;
+        text-align: center;
+    }
+    .training__block {
+        margin-bottom: 70px;
+    }
+    .training-choice__link {
+        padding-bottom: 50px;
+    }
+    .training-choice .link-img {
+        top: 110px;
+    }
+}
+
+@media (max-width: 540.98px) {
+    .training__block {
+        border: 0;
+    }
+}
+
+@media (max-width: 383.98px) {
+    .training__text {
+        font-size: 25px;
+    }
+
+    .training__icon {
+        width: 220px;
+    }
+}

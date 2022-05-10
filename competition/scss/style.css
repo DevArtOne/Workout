@@ -1,0 +1,385 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*за допомогою данної функції ми скидуємо всі кордони які задаються браузером автоматично*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*дане значення зміню підрахунок ширини блоку так щоб нам було зручно знею працювати*/
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*дана функція прибирає лінії обводки в деяких браузерах*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/*Робимо блочними данні теги nav, footer, header, aside*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -mos-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*Дані параметри задають рівні умови для поведінки шрифтів, наприклад самовільне збільшення шрифтів на iphone*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*команда для наслідування сімейства шрифтів*/
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*прибирають деякі особливості в різних браузерах*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* обнулення */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*за допомогою данної функції ми скидуємо всі кордони які задаються браузером автоматично*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*дане значення зміню підрахунок ширини блоку так щоб нам було зручно знею працювати*/
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*дана функція прибирає лінії обводки в деяких браузерах*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/*Робимо блочними данні теги nav, footer, header, aside*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -mos-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*Дані параметри задають рівні умови для поведінки шрифтів, наприклад самовільне збільшення шрифтів на iphone*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*команда для наслідування сімейства шрифтів*/
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*прибирають деякі особливості в різних браузерах*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/* обнулення */
+body {
+  font-family: 'alumni sans';
+  background-color: #05211f;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.buttons {
+  margin: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.buttons__button-second {
+  padding: 10px 15px;
+  text-align: center;
+  line-height: 2.2;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.buttons__button-second:first-child {
+  background: white;
+  color: black;
+  border-radius: 5px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  -webkit-box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+          box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+}
+
+.buttons__button-second:first-child:active {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
+.buttons__button-second:nth-child(2) {
+  background: #313131;
+  -webkit-box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+          box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+}
+
+.buttons__button-second:nth-child(2):active {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
+.buttons__button-second:nth-child(3) {
+  background: #313131;
+  -webkit-box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+          box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+}
+
+.buttons__button-second:nth-child(3):active {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
+.buttons__button-second:nth-child(4) {
+  background: #313131;
+  -webkit-box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+          box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+}
+
+.buttons__button-second:nth-child(4):active {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
+.buttons__button-second:nth-child(5) {
+  background: #313131;
+  -webkit-box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+          box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+}
+
+.buttons__button-second:nth-child(5):active {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
+.buttons__button-second:nth-child(6) {
+  background: #313131;
+  -webkit-box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+          box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+}
+
+.buttons__button-second:nth-child(6):active {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
+.buttons__button-second:nth-child(7) {
+  background: #660909;
+  -webkit-box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+          box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+}
+
+.buttons__button-second:nth-child(7):active {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
+.buttons__button-second:nth-child(8) {
+  background: #313131;
+  -webkit-box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+          box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+}
+
+.buttons__button-second:nth-child(8):active {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
+.buttons__button-second:last-child {
+  margin-right: 0;
+  background: #313131;
+  -webkit-box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+          box-shadow: 3px 3px 3px rgba(43, 229, 207, 0.56);
+}
+
+.buttons__button-second:last-child:active {
+  position: relative;
+  top: 3px;
+  left: 3px;
+  -webkit-box-shadow: 0 0 0;
+          box-shadow: 0 0 0;
+}
+
+.videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.videos__video {
+  margin-right: 15px;
+}
+
+.videos__title {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 15px;
+  letter-spacing: 1.2px;
+}
