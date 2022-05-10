@@ -45,7 +45,7 @@ $(function () {
         menu.removeClass("show");
 
         $("html, body").animate({
-            scrollTop: elementOffset - 50
+            scrollTop: elementOffset - 20
         }, 700)
 
     });

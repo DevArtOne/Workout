@@ -782,7 +782,7 @@ h6 {
   }
   .choice__title {
     font-size: 40px;
-    margin-top: 50px;
+    margin-top: 60px;
   }
   .training__block {
     margin-bottom: 70px;
@@ -792,6 +792,9 @@ h6 {
   }
   .training-choice .link-img {
     top: 110px;
+  }
+  .items__item {
+    font-size: 14px;
   }
 }
 
@@ -816,6 +819,9 @@ h6 {
   .info {
     height: 100%;
   }
+  .items__item {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 607.98px) {
@@ -833,7 +839,7 @@ h6 {
   }
 }
 
-@media (max-width: 540.98px) {
+@media (max-width: 545.98px) {
   .training__item {
     margin: 0;
   }
@@ -848,6 +854,15 @@ h6 {
   }
   .training__text {
     text-align: center;
+  }
+  .items__item {
+    font-size: 8px;
+  }
+  .items__item::before {
+    top: -0.5px;
+    padding-right: 7px;
+    margin-right: 6px;
+    font-size: 5px;
   }
 }
 
