@@ -1,7 +1,14 @@
 "use strict";
 
 
-
+function headerClick() {
+    let headerClick = document.querySelector(".transform").style.transform;
+    if (headerClick == "translateY(0px)") {
+        document.querySelector(".transform").style.transform = "translateY(-60px)";
+    } else {
+        document.querySelector(".transform").style.transform = "translateY(0px)";
+    }
+}
 
 
 $(function () {
@@ -14,6 +21,8 @@ $(function () {
     let scrollPos = $(window).scrollTop();
     let menu = $("#menu");
     let menuToggle = $("#menuToggle");
+
+
 
     checkScroll(scrollPos, headerH)
 
@@ -30,8 +39,35 @@ $(function () {
         headerH) {
         if (scrollPos > headerH) {
             header.addClass("fixed");
+        }
+        // else {
+        //     header.removeClass("fixed");
+        // }
+
+        if (scrollPos > headerH) {
+            header.addClass("transform");
         } else {
-            header.removeClass("fixed");
+            header.removeClass("transform");
+        }
+
+        if (scrollPos > headerH) {
+            document.getElementById("dekorOne").style.transform = "translateY(0px) skewX(20deg)";
+        } else {
+            document.getElementById("dekorOne").style.transform = "translateY(-20px)";
+        }
+        if (scrollPos > headerH) {
+            document.getElementById("dekorTwo").style.transform = "translateY(0px) skewX(-20deg)";
+        } else {
+            document.getElementById("dekorTwo").style.transform = "translateY(-20px)";
+
+        }
+
+
+
+        if (scrollPos > headerH) {
+            document.getElementById("header").style.transform = "translateY(-60px)"
+        } else {
+            document.getElementById("header").style.transform = "translateY(0px)"
         }
     }
     // click on header menu==================================
@@ -45,7 +81,7 @@ $(function () {
         menu.removeClass("show");
 
         $("html, body").animate({
-            scrollTop: elementOffset - 20
+            scrollTop: elementOffset - 0
         }, 700)
 
     });
