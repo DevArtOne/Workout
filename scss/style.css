@@ -631,7 +631,7 @@ body {
 }
 
 .footer {
-  background-color: #059b84;
+  background-color: black;
   position: relative;
 }
 
@@ -964,6 +964,7 @@ body {
   }
   .footer__address {
     margin-bottom: 15px;
+    margin-right: 0px;
   }
   .button {
     font-size: 14px;

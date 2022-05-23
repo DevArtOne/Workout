@@ -499,7 +499,7 @@ body {
 
 // footer ================================================
 .footer {
-    background-color: rgb(5, 155, 132);
+    background-color: rgb(0, 0, 0);
     position: relative;
 
     &__block {
@@ -801,6 +801,7 @@ body {
     }
     .footer__address {
         margin-bottom: 15px;
+        margin-right: 0px;
     }
 
     .button {
