@@ -519,32 +519,12 @@ body {
 
         font-size: 50px;
     }
-
-    &__schedule {
-        display: flex;
-        font-family: Montserrat;
-        color: #eaf3e8;
-        font-size: 15px;
-    }
-
-    &__address {
-        margin-right: 15px;
-    }
-
-    &__place {
-        margin-bottom: 8px;
-    }
-
-    &__city {
-        line-height: 1.2;
-    }
-
-    &__time-exercise {
-        margin-bottom: 8px;
-    }
-
-    &__day {
-        line-height: 1.2;
+    &__ukrain {
+        color: rgb(48, 203, 242);
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 35px;
+        text-shadow: 1px 1px 15px #eaff4a;
+        
     }
 }
 @media (max-width: 1300.98px) {

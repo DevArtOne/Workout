@@ -658,33 +658,11 @@ body {
   font-size: 50px;
 }
 
-.footer__schedule {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: Montserrat;
-  color: #eaf3e8;
-  font-size: 15px;
-}
-
-.footer__address {
-  margin-right: 15px;
-}
-
-.footer__place {
-  margin-bottom: 8px;
-}
-
-.footer__city {
-  line-height: 1.2;
-}
-
-.footer__time-exercise {
-  margin-bottom: 8px;
-}
-
-.footer__day {
-  line-height: 1.2;
+.footer__ukrain {
+  color: #30cbf2;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 35px;
+  text-shadow: 1px 1px 15px #eaff4a;
 }
 
 @media (max-width: 1300.98px) {
